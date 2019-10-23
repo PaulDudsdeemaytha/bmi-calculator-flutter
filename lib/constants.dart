@@ -5,7 +5,7 @@ const labelTextStyle = TextStyle(
   color: Colors.grey,
 );
 
-const bottomContainerHeight = 70.0;
-const cardColor = Colors.blueGrey;
-const bottomContainerColor = Colors.pink;
-const activeCardColor = Colors.blue;
+const kBottomContainerHeight = 70.0;
+const kCardColor = Colors.blueGrey;
+const kBottomContainerColor = Colors.pink;
+const kActiveCardColor = Colors.blue;

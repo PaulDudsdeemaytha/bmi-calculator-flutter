@@ -33,8 +33,8 @@ class _InputPageState extends State<InputPage> {
                       });
                     },
                     colour: selectedGender == Gender.male
-                        ? activeCardColor
-                        : cardColor,
+                        ? kActiveCardColor
+                        : kCardColor,
                     cardChild: new ReusableIcon(
                       icon: FontAwesomeIcons.mars,
                       myText: 'MALE',
@@ -49,8 +49,8 @@ class _InputPageState extends State<InputPage> {
                       });
                     },
                     colour: selectedGender == Gender.female
-                        ? activeCardColor
-                        : cardColor,
+                        ? kActiveCardColor
+                        : kCardColor,
                     cardChild: ReusableIcon(
                       icon: FontAwesomeIcons.venus,
                       myText: 'FEMALE',
@@ -65,7 +65,7 @@ class _InputPageState extends State<InputPage> {
               children: <Widget>[
                 Expanded(
                   child: new ReusableCard(
-                    colour: cardColor,
+                    colour: kCardColor,
                     cardChild: Column(
                       children: <Widget>[
                         Text(
@@ -83,22 +83,22 @@ class _InputPageState extends State<InputPage> {
               children: <Widget>[
                 Expanded(
                   child: new ReusableCard(
-                    colour: cardColor,
+                    colour: kCardColor,
                   ),
                 ),
                 Expanded(
                   child: new ReusableCard(
-                    colour: cardColor,
+                    colour: kCardColor,
                   ),
                 ),
               ],
             ),
           ),
           Container(
-            color: bottomContainerColor,
+            color: kBottomContainerColor,
             margin: EdgeInsets.only(top: 10),
             width: double.infinity,
-            height: bottomContainerHeight,
+            height: kBottomContainerHeight,
           )
         ],
       ),
